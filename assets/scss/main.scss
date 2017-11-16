@@ -1,0 +1,15 @@
+//Presets and reset settings
+@import "presets/presets";
+@import "presets/reset";
+@import "presets/template";
+
+//Custom libraries
+@import "libs/slick";
+
+//Main template styles
+@import "header/header";
+@import "footer/footer";
+@import "content/content";
+
+//Template media styles
+@import "content/media";
