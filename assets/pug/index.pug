@@ -1,4 +1,26 @@
 extends _layout.pug
 
 block content
-    main.main-content
+    .section
+        include components/intro/_intro
+    .section
+        include components/prepare/_prepare
+    .section
+        include components/markup/_markup
+    .section
+        .slide
+            include components/settings/_settings
+        .slide
+            include components/settings/template/_template
+        .slide
+            include components/settings/catalog/_catalog
+        .slide
+            include components/settings/product/_product
+        .slide
+            include components/settings/users/_users
+        .slide
+            include components/settings/order/_order
+    .section
+        include components/seo/_seo
+    .section
+        include components/review/_review

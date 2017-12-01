@@ -6,15 +6,15 @@ html(lang="ru")
         meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0")
         title Итальянская модная  одежда премиум-класса
         meta(name="description" content="Итальянская модная  одежда премиум-класса")
+        link(rel="stylesheet" href="./libs/jquery.fullpage.min.css")
         link(rel="stylesheet" href="./css/main.css")
     body
-        #wrapper
-            //header
-            include _header.pug
+        #fullpage
             block content
-            //footer
-            include _footer.pug
         script(src="./libs/jquery-3.2.1.min.js")
+        script(src="./libs/jquery.fullpage.min.js")
+        script(src="./libs/jquery.fullpage.extensions.min.js")
         script(src="./libs/jquery.fancybox.min.js")
+        script(src="./libs/jquery.mousewheel.min.js")
         script(src="./libs/slick.min.js")
         script(src="./js/main.js")
