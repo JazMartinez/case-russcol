@@ -1,1 +1,20 @@
-p 4.4
+.users
+    .container
+        .section-header
+            .section-header__container
+                h2.section-header__title Настройка cms
+                p.section-header__step Группы пользователей
+        .users-desc.col-md-5
+            p.users-desc__text Настроили 2 типа #[br]пользователей:
+            .users-desc__row
+                .users-desc__item
+                    .users-desc__icon: img(src="./img/settings/users/icons/team.png" alt="#")
+                    p.users-desc__caption оптовые
+                .users-desc__item
+                    .users-desc__icon: img(src="./img/settings/users/icons/people.png" alt="#")
+                    p.users-desc__caption розничные
+            p.users-desc__text.users-desc__text_small Пользователь имеет возможность зарегистрироваться как оптовый покупатель. Оптовым пользователям назначается индивидуальная скидка администратором сайта
+        .section__nav: a(href="javascript:;") дальше
+    .users-images
+        .users-images__item.users-images__item_register.slider-slide-left: img(src="./img/settings/users/register.png" alt="#")
+        .users-images__item.users-images__item_kabinet.slider-slide-right: img(src="./img/settings/users/kabinet.png" alt="#")

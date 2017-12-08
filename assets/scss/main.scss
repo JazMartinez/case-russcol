@@ -18,3 +18,108 @@ Template grid
 Base template styles
  ----*/
 @import "presets/template";
+
+/*----
+Intro
+ ----*/
+@import "components/intro/intro";
+
+/*----
+Prepare
+ ----*/
+@import "components/prepare/prepare";
+
+/*----
+Markup
+ ----*/
+@import "components/markup/markup";
+
+/*----
+Settings
+ ----*/
+@import "components/settings/settings";
+
+/*----
+Settings template
+ ----*/
+@import "components/settings/template/template";
+
+/*----
+Settings catalog
+ ----*/
+@import "components/settings/catalog/catalog";
+
+/*----
+Settings product
+ ----*/
+@import "components/settings/product/product";
+
+/*----
+Settings users
+ ----*/
+@import "components/settings/users/users";
+
+/*----
+Settings order
+ ----*/
+@import "components/settings/order/order";
+
+/*----
+Review
+ ----*/
+@import "components/review/review";
+
+/*----
+Media
+ ----*/
+@import "presets/media";
+
+
+/*----
+Animations
+ ----*/
+.slide-left {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 1s ease-out;
+
+  .fp-completely & {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-right {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 1s ease-out;
+
+  .fp-completely & {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slider-slide-left {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 1s ease-out .5s;
+
+  .slide.active & {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 0s;
+  }
+}
+
+.slider-slide-right {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 1s ease-out .5s;
+
+  .slide.active & {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 0s;
+  }
+}

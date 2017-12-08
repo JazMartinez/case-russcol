@@ -1,0 +1,38 @@
+.review {
+  height: 100%;
+  background: url("../img/review/bg.jpg") no-repeat center;
+}
+
+.review-desc {
+  position: relative;
+  padding-left: 25px;
+  margin-top: 150px;
+  color: #ffffff;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -20px;
+    width: 20px;
+    height: 18px;
+    background: url("../img/review/review_quote.png") no-repeat center;
+  }
+}
+
+.review-desc__text {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.review-desc__name {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.review-desc__link {
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 300;
+}

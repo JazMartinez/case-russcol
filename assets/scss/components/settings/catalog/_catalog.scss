@@ -1,0 +1,77 @@
+.catalog {
+  position: relative;
+  height: 100%;
+}
+
+.catalog__section-desc {
+  position: static;
+}
+
+.absolute-text {
+  position: relative;
+  z-index: 20;
+}
+
+.absolute-text__item {
+  position: absolute;
+  max-width: 220px;
+
+  &:before {
+    top: 4px;
+  }
+}
+
+.absolute-text__position_first {
+  left: 0;
+  top: 480px;
+}
+
+.absolute-text__position_second {
+  left: 50%;
+  top: -20px;
+}
+
+.absolute-text__position_third {
+  left: 75%;
+  top: 100px;
+}
+
+.absolute-images {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.absolute-images__item {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  line-height: 0;
+  z-index: 10;
+  transition: all .3s ease-out;
+}
+
+.absolute-images__item_catalog {
+  left: -180px;
+  bottom: 0;
+  z-index: 5;
+}
+
+.absolute-images__item_description {
+  left: 120px;
+  bottom: 370px;
+}
+
+.absolute-images__item_filter {
+  left: 140px;
+  bottom: 255px;
+}
+
+.absolute-images__item_card {
+  right: 250px;
+  left: auto;
+  bottom: 370px;
+}

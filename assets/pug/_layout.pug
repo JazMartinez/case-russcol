@@ -8,12 +8,22 @@ html(lang="ru")
         meta(name="description" content="Итальянская модная  одежда премиум-класса")
         link(rel="stylesheet" href="./libs/jquery.fullpage.min.css")
         link(rel="stylesheet" href="./css/main.css")
-    body
+    body.fp-responsive
+        .background-grid
+            .container
+                .row.no-gutters
+                    .background-grid__item.col-md-3
+                    .background-grid__item.col-md-3
+                    .background-grid__item.col-md-3
+                    .background-grid__item.col-md-3
+        nav.main-menu
+            ul.navigation
+            p.slide-down листайте вниз
         #fullpage
             block content
         script(src="./libs/jquery-3.2.1.min.js")
+        script(src="./libs/scrolloverflow.min.js")
         script(src="./libs/jquery.fullpage.min.js")
-        script(src="./libs/jquery.fullpage.extensions.min.js")
         script(src="./libs/jquery.fancybox.min.js")
         script(src="./libs/jquery.mousewheel.min.js")
         script(src="./libs/slick.min.js")

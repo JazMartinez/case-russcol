@@ -1,0 +1,44 @@
+.intro {
+  height: 100%;
+  padding-top: 50px;
+
+  .container {
+    height: 100%;
+    position: relative;
+  }
+}
+
+.intro-logo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  line-height: 0;
+}
+
+.intro-mokups {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.intro-mokup__image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  line-height: 0;
+  transition: all .3s ease-out;
+}
+
+.intro-mokup__image_first {
+  bottom: 20px;
+}
+
+.intro-mokup__image_second {
+  right: 70px;
+}
+
+.intro__section-desc {
+  margin-top: -110px;
+}

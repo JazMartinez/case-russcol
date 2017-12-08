@@ -1,0 +1,46 @@
+.markup {
+  height: 100%;
+
+  .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+}
+
+.markup__section-header {
+  flex-grow: 1;
+  max-height: 250px;
+}
+
+.markup-devices {
+  position: relative;
+  margin-top: 60px;
+  flex-grow: 1;
+  max-height: 100%;
+}
+
+.markup-devices__item {
+  position: absolute;
+  transition: all .3s ease-out;
+}
+
+.markup-devices__item_desktop {
+  left: -115px;
+  top: 0;
+  z-index: 15;
+}
+
+.markup-devices__item_mobile {
+  right: 160px;
+  top: 0;
+  z-index: 10;
+}
+
+.markup-devices__item_tablet {
+  right: 0;
+  top: 230px;
+  z-index: 5;
+}
